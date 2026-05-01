@@ -5,7 +5,10 @@ const app = express();
 
 // app.use(cors());
 app.use(cors({
-  origin: 'http://localhost:64954', // Angular port
+  origin: [
+    'http://localhost:4200',
+    'https://69f48cf6356c9d716f2b8e49--symphonious-zabaione-cb8775.netlify.app'
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
